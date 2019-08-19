@@ -1,1 +1,64 @@
 // Navigation code here
+
+.navigation {
+  
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background:@nav-bg;
+      width:100%;
+      justify-content: space-between;      
+  
+      
+      
+
+      .navigation h3 {
+      
+                  justify-content: center;
+                  margin-bottom: 15px;
+                  padding-top:15px;
+      
+      
+}
+
+      .navigation nav {
+            
+                  justify-content: center;
+                  display: flex;
+                  align-content: center;
+                  padding-bottom: 20px;
+  
+      
+}
+
+      .navigation, nav, a {
+                  
+                  text-decoration: none;
+                  color: @nav-font;
+                  font-size: 1.5rem;
+                  padding:10px 10px 0;
+      
+
+      
+}
+
+a:hover {
+            background: red;
+            color: white;
+            font-family: 'Creepster', serif;
+            font-size: 1.2em;
+            letter-spacing: 3px;
+            line-height: .75em;
+}
+
+
+@media @phone {
+      nav a {
+            
+            font-size: 1rem;
+      }
+      
+}
+
+}
+
