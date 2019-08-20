@@ -10,7 +10,7 @@
       justify-content: space-between;      
   
       
-      
+}   
 
       .navigation h3 {
       
@@ -31,19 +31,26 @@
       
 }
 
-      .navigation, nav, a {
+      .navigation, nav a {
                   
                   text-decoration: none;
-                  color: @nav-font;
+                  color: @shuttle-gray;
                   font-size: 1.5rem;
                   padding:10px 10px 0;
+                  
+                  @media @phone {
+                        
+                     font-size: 0.9rem;   
+                        
+                  }
       
 
       
 }
 
-a:hover {
-            background: red;
+      a:hover {
+            background: black;
+            border-radius: 6px;
             color: white;
             font-family: 'Creepster', serif;
             font-size: 1.2em;
@@ -52,13 +59,4 @@ a:hover {
 }
 
 
-@media @phone {
-      nav a {
-            
-            font-size: 1rem;
-      }
-      
-}
-
-}
 

@@ -1,6 +1,12 @@
 // Home Content
 
 .home {
+  
+  @media @phone {
+    
+      max-width: 100%;
+    
+  }
 
   .intro {
 
@@ -11,17 +17,23 @@
     p {
       padding:0 15px;
     }
-    
-    
-    @media @phone {
-      
-      img {
-          width: 95%;
-          margin-left: 2.5%;
-      }
-      
-      
   
+  }
+
+.intro{
+    
+    display: flex;
+    flex-wrap: wrap;
+ 
+  
+  
+}
+ .intro, .spacePhoto {
+    
+
+        width: 100%;
+    
+    
   }
 
   .space-images {
@@ -35,21 +47,55 @@
       border-radius: 20px;
       height: 100%;
     }
-  }
+  } 
+    
+}    
+    
+    @media @mobile {
+  
+        
+        .space-images {
+          
+            justify-content: center;
+            display: flex;
+            
+          
+        }
+    }
+        
+        .space-images, .blast {
+          
+            width: 150%;
+          
+          
+        }
+          
+        .space-images, .sky {
+          
+          display: none;
+          
+        }
+        
+        .space-images, .launch {
+          
+          display: none;
+          
+        }
+        
+  
+
 
   .visit-planets {
     padding: 15px;
     margin-bottom: 60px;
 
-    h3 {
-      margin-top: 11px;
-    }
+              h3 {
+                margin-top: 11px;
+              }
 
-    p {
-      margin-top: 13px;
-    }
-    
-    
+              p {
+                margin-top: 13px;
+              }
     
   }
 
@@ -60,31 +106,51 @@
     display: flex;
     justify-content: center;
 
-    .walk-text {
-      width: 50%;
 
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-        
-        .newButton();
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
+    @media @phone{
       
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
+          flex-direction: column-reverse;
+      
     }
-  }
-}// home
+    
+            .walk-img {
+      
+                    width: 100%;
+                    margin-bottom: 50px;
+      
+    }
+            .walk-text {
+                    width: 100%;
+                
+                
+
+            h3 {
+                    margin-bottom: 10px;
+      }
+
+            p {
+                    margin-bottom: 26px;
+      }
+
+            .btn {
+        
+                .button (black, white, 350px, 60px)
+        
+      }  
+    }
+    }
+
+            .walk-img {
+                  width: 46%;
+                  margin-left: 4%;
+      
+            img {
+                  width: 100%;
+                  height: auto;
+                  border-radius: 10px;
+      }
+            }
+  
+  
+  
+// home

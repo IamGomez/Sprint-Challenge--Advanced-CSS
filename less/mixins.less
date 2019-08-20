@@ -1,22 +1,22 @@
 // Mixins Here
 
-.SignUpButton (width: 110px, height: 40px, @background-color: @ebony-clay) {
+.button (@color, @fontColor, @width, @height){
   
         display: flex;
         justify-content: center;
         align-items: center;
-        background: @background-color;
-        color: @font-color;
-        height: 40px;
-        width: 110px;
+        background: @color;
+        color: @fontColor;
+        height: @height;
+        width: @width;
         border-radius: 5px;
-        
-        
-    &:hover {
+        &:hover {
       
-            background: @font-color;
-            color: @background-color;
+            background: @fontColor;
+            color: @color;
       
     }
   
 }
+
+
