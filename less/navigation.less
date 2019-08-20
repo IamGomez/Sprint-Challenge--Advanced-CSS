@@ -1,1 +1,91 @@
 // Navigation code here
+
+.navigation {
+  
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background:@nav-bg;
+      width:100%;
+      justify-content: space-between;      
+  
+      
+}   
+
+      .navigation h3 {
+      
+                  justify-content: center;
+                  margin-bottom: 15px;
+                  padding-top:15px;
+      
+      
+}
+
+      .navigation nav {
+            
+                  justify-content: center;
+                  display: flex;
+                  align-content: center;
+                  padding-bottom: 20px;
+  
+      
+}
+
+      .navigation, nav a {
+                  
+                  text-decoration: none;
+                  color: @shuttle-gray;
+                  font-size: 1.5rem;
+                  padding:10px 10px 0;
+                  
+                  @media @phone {
+                        
+                     font-size: 0.9rem;   
+                        
+                  }
+      
+
+      
+}
+
+      a:hover {
+            background: black;
+            border-radius: 6px;
+            color: white;
+            font-family: 'Creepster', serif;
+            font-size: 1.2em;
+            letter-spacing: 3px;
+            line-height: .75em;
+}
+
+
+@media @phone {
+      
+      
+    .navigation{
+          
+        height: 100px;  
+          
+    }  
+      
+   .navigation nav {
+      
+         opacity: 0.8;
+         position: fixed;
+         margin-top: 20px;
+         background: @nav-bg;
+         margin-top: 40px;
+      
+   }   
+   
+   .navigation, nav a {
+         
+         
+      color: black;
+   }
+      
+      
+}
+
+
+
